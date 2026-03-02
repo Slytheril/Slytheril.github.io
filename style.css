@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+}
+
+/* 2. THE 2-COLUMN HEADER */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This keeps the name in the "mid of the cell" vertically */
+    border-bottom: 3px solid #2c3e50; /* Slightly thicker line for the bigger name */
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.header-left {
+    flex: 2; /* Give the name more horizontal room */
+}
+
+/* TARGET THE NAME SIZE HERE */
+.header-left h1, 
+.header-left .Huge {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem; /* INCREASED SIZE - Adjust this number as needed */
+    font-weight: 800;   /* Extra bold */
+    color: #2c3e50;
+    text-align: left;
+    line-height: 1;    /* Prevents large font from adding top/bottom gaps */
+}
+
+.header-right {
+    flex: 1;
+    text-align: left; 
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    border-left: 1px solid #eee; /* Optional: adds a subtle divider between name and info */
+    padding-left: 20px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold; /* This keeps your links bold as requested */
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 5px;
+}
+
+em {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: normal;
+    color: #7f8c8d;
+}
+
+/* TARGET THE LINKS IN THE HEADER */
+em a {
+    text-decoration: none;
+    color: #0077b5;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+h2 {
+    color: #e67e22;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* EXPERIENCE LAYOUT (Title Left, Date Right) */
+p:has(strong) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
