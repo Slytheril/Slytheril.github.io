@@ -23,7 +23,7 @@ body {
 }
 
 /* TARGET THE NAME SIZE HERE */
-.header-left h1, 
+.header-left p,
 .header-left .Huge {
     margin: 0;
     padding: 0;
@@ -87,5 +87,33 @@ h2 {
 p:has(strong) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.experience-entry p:has(strong) {
+    display: block;
+}
+
+/* SKILLS SECTION LAYOUT */
+#skills + table {
+    width: 100%;
+}
+
+/* Adjust spacing for experience section */
+#experience ~ p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#experience ~ p + ul {
+    margin-top: 0;
+}
+
+#experience ~ ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#experience ~ ul:last-of-type {
     margin-bottom: 0;
 }
