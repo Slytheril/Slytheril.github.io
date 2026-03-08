@@ -10,6 +10,6 @@ pandoc Nhat_CV.tex -o Nhat_CV.html --css style.css --self-contained
 
 # 2. Convert HTML to PDF
 echo "Generating PDF..."
-wkhtmltopdf Nhat_CV.html Nhat_CV.pdf
+wkhtmltopdf Nhat_CV.html output.pdf
 
 echo "Success! Nhat_CV.pdf has been created."
